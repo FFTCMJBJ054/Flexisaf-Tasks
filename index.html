@@ -7,7 +7,7 @@
 <body>
   <header>
     <h1>Johnson Bamidele</h1>
-    <p>Web Developer | DevOps Enthusiast | Automation Engineer</p>
+    <p>Web Developer | DevOps Enthusiast | Engineer</p>
   </header>
 
   <nav>
@@ -16,6 +16,7 @@
       <li><a href="#services">Services</a></li>
       <li><a href="#portfolio">Portfolio</a></li>
       <li><a href="#contact">Contact</a></li>
+      <li><a href="#book">Book</a></li> 
     </ul>
   </nav>
 
@@ -45,8 +46,55 @@
 
   <section id="contact">
     <h2>Contact Me</h2>
-    <p>Email: jaybeejay49@gmail.com</p>
-    <p>Phone: +234-8139481790</p>
+    <p>Email: johnson@example.com</p>
+    <p>Phone: +234-800-000-0000</p>
+  </section>
+
+  <section id="social">
+    <h2>Connect with Me</h2>
+    <p>Follow me on social media:</p>
+    <ul>
+      <li><a href="https://x.com/JohnsonBamidel1">Twitter</a></li>
+      <li><a href="www.linkedin.com/in/johnson-bamidele-damilola">LinkedIn</a></li>
+
+      
+  <section id="book">
+    <h2>Book an Appointment</h2>
+    <form onsubmit="document.getElementById('confirmation').style.display = 'block'; return false;">
+      <label for="fullname">Full Name:</label><br>
+      <input type="text" id="fullname" name="fullname" required><br><br>
+
+      <label for="email">Email Address:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="phone">Phone Number:</label><br>
+      <input type="tel" id="phone" name="phone" required pattern="[0-9]{11}"><br><br>
+
+      <label for="date">Date of Appointment:</label><br>
+      <input type="date" id="date" name="date" required><br><br>
+
+      <label for="time">Time:</label><br>
+      <input type="time" id="time" name="time" required><br><br>
+
+      <label for="service">Service Type:</label><br>
+      <select id="service" name="service">
+        <option value="consultation">Consultation</option>
+        <option value="training">Training</option>
+        <option value="project-help">Project Help</option>
+      </select><br><br>
+
+      <label for="message">Additional Message:</label><br>
+      <textarea id="message" name="message" rows="4" cols="30"></textarea><br><br>
+
+      <label for="preferred-contact">Preferred Contact Method:</label><br>
+      <input type="radio" id="emailContact" name="preferred-contact" value="Email" checked>Email
+      <input type="radio" id="phoneContact" name="preferred-contact" value="Phone">Phone<br><br>
+
+      <input type="submit" value="Contact Now">
+    </form>
+
+    <!-- Confirmation message (initially hidden) -->
+    <p id="confirmation" style="display:none; color: green;">Thank you! Message Received</p>
   </section>
 
   <footer>
